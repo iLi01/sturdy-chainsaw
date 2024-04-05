@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav-bar-aside {
+  height: 8%;
+  width: 100vh;
+  position: fixed;
+  z-index: 1111;
+  top: 0;
+  left: 0;
+  float: top;
+  background-color: lightgray;
+}
+
+.text-size-1 {
+  background-color: lightgray;
+}
+
+.sections {
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+/* !!!children of the section parent! */
+#hero-sec {
+  scroll-snap-align: start;
+  background-color: aqua;
+}
+
+#skills-sec {
+  scroll-snap-align: start;
+  background-color: aquamarine;
+}
+
+#projects-gallery-sec {
+  scroll-snap-align: start;
+}
+
+#extras-sec {
+  scroll-snap-align: start;
+}
+
+#message-me-sec {
+  scroll-snap-align: start;
+}
+
+/* //////////////// desktop version */
+@media screen and (min-width: 600px){
+  #nav-bar-aside {
+    height: 100%;
+    width: 15vh;
+    position: fixed;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+    float: left;
+    background-color: lightgray;
+  }
+
+  #hero-sec {
+    scroll-snap-align: start;
+    background-color: violet;
+  }
+}
