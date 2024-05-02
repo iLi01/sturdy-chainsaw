@@ -6,6 +6,18 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 #nav-bar-aside {
   height: 8%;
   width: 100vh;
@@ -21,35 +33,135 @@
   background-color: lightgray;
 }
 
-.sections {
-  height: 100vh;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
+#nav-bar {
+  display: none;
 }
 
-/* !!!children of the section parent! */
-#hero-sec {
+#nav-bar.open {
+  display: block;
+}
+
+
+/* ///scroll-snap made every 100vh */
+.sections {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+
+
+
+
+/* //////////HERO SECTION */
+#hero-sec {
   background-color: aqua;
 }
 
-#skills-sec {
-  scroll-snap-align: start;
+
+
+
+
+/* //////////GALLERY SECTION */
+
+#projects-gallery-sec {
   background-color: aquamarine;
 }
 
-#projects-gallery-sec {
-  scroll-snap-align: start;
+#skills-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
 }
 
+#skills-icons-img_1, #skills-icons-img_2 {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#second-page-cards {
+  display: none;
+}
+
+#second-page-cards.open {
+  display: block;
+}
+
+#first-page-cards {
+  display: block;
+}
+
+#first-page-cards.open {
+  display: none;
+}
+
+.arrows-png-img {
+  max-height: 20px;
+}
+
+#arrows-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+#card-2 p{
+  background-color: aqua;
+}
+
+
+
+
+
+/* //////////EXTRAS SECTION */
 #extras-sec {
-  scroll-snap-align: start;
+  background-color: rgb(154, 154, 255);
 }
 
-#message-me-sec {
-  scroll-snap-align: start;
+
+
+
+
+
+/* //////////CONTACT SECTION */
+#contact-me-sec {
+  background-color: rgb(255, 255, 176);
 }
+
+
+
+
+
+/* //////////CONTACT SECTION */
+#footer-sec {
+  background-color: rgb(176, 255, 238);
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+
 
 /* //////////////// desktop version */
 @media screen and (min-width: 600px){
@@ -64,8 +176,26 @@
     background-color: lightgray;
   }
 
+  /* aside space so that it doesnt confuse the placement of everything */
+  .sections {
+    margin-left: 15vh;
+  }
+
   #hero-sec {
     scroll-snap-align: start;
     background-color: violet;
+  }
+
+  .icon-button {
+    display: none;
+  }
+
+  /* always opened nav (compared to mobile) */
+  #nav-bar {
+    display: block;
+  }
+  
+  #nav-bar.open {
+    display: block;
   }
 }
