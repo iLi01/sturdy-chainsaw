@@ -28,3 +28,10 @@ arrowLeft.addEventListener('click', () => {
 }, {once : false});
 //how to make it go through only back and forth?
 //once - true if i want it to be a singular eventlistener
+
+
+window.scroll({
+  top: 2500, 
+  left: 0, 
+  behavior: 'smooth'
+});

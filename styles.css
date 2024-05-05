@@ -59,6 +59,7 @@ section {
   height: 100vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  scroll-behavior: smooth;
 }
 
 
@@ -123,6 +124,15 @@ section {
 
 #card-2 p{
   background-color: aqua;
+}
+
+#projects-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: normal;
+  align-content: center;
 }
 
 
@@ -197,5 +207,18 @@ section {
   
   #nav-bar.open {
     display: block;
+  }
+
+
+
+  
+/* //////////GALLERY SECTION */
+  #projects-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: center;
   }
 }
