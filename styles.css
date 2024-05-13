@@ -79,6 +79,7 @@ section {
 
 #projects-gallery-sec {
   background-color: aquamarine;
+  /* height: 100vh; */
 }
 
 #skills-icons {
@@ -126,9 +127,13 @@ section {
   background-color: aqua;
 }
 
-#projects-cards {
+/* #projects-cards {
+  height: 100vh;
+} */
+
+#first-page-cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: normal;
@@ -163,9 +168,6 @@ section {
   background-color: rgb(176, 255, 238);
   height: 200px;
 }
-
-
-
 
 
 
@@ -210,15 +212,20 @@ section {
   }
 
 
-
-  
 /* //////////GALLERY SECTION */
-  #projects-cards {
+/* #projects-gallery-sec {
+  background-color: aquamarine;
+  height: 100vh;
+} */
+
+  #first-page-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: normal;
     align-content: center;
   }
+
+
 }
