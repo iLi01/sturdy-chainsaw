@@ -13,27 +13,27 @@
 .container {
   width: 100%;
   display: grid;
-  grid-gap: 1.5vh;
+  grid-gap: 1vh;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(2, 400px);
   /* initial 400 - 500px */
-  padding-left: 16.5vh; 
+  padding-left: 1vh; 
   /* added +1.5vh to the padding left for the side bar */
-  padding-right: 1.5vh;
+  padding-right: 1vh; 
 }
 
 .container > div > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 0.5rem; */
+  /* border-radius: 0.7rem; */
 }
 
 .img_container {
   position: relative;
   top: 0;
   transition: top ease 0.5s;
-  /* border-radius: 0.5rem; */
+  /* border-radius: 0.7rem; */
   /* need both border radiuses for the hover effect to work properly with transparent background */
 }
 
@@ -43,6 +43,9 @@
   transition: all 0.4s ease 0s;
   cursor: pointer;
   top: -8px;
+  transform: scale(1.03);
+  /* transform: scale(1.1); 
+  transition: 400ms;  */
 }
 
 /* The Modal (background) */
@@ -83,4 +86,28 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#zoom-in-img {
+  max-height: 80vh;
+}
+
+
+@media screen and (min-width: 600px){
+  .container {
+    width: 100%;
+    display: grid;
+    grid-gap: 1.5vh;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 400px);
+    /* initial 400 - 500px */
+    padding-left: 16.5vh; 
+    /* added +1.5vh to the padding left for the side bar */
+    padding-right: 1.5vh; 
+  }
+
+  */
+  #zoom-in-img {
+    max-height: 60vh;
+  }
 }

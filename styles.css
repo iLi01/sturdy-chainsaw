@@ -8,6 +8,9 @@
 
 :root {
   --purple: rgba(152,109,255,255);
+  --header-size_1: 40vh;
+  --header-size_2: 20vh;
+  --normal-size: 10vh;
 }
 
 .visually-hidden {
@@ -35,6 +38,7 @@
 
 .text-size-1 {
   background-color: lightgray;
+  font-size: var(--normal-size);
 }
 
 #nav-bar {
@@ -75,6 +79,15 @@ section {
   background-color: aqua;
 }
 
+/* gif iLi size */
+#gif-name{
+  max-height: 10vh;
+}
+
+/* photo with face size */
+#photo-face {
+  max-height: 20vh;
+}
 
 
 
