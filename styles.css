@@ -4,6 +4,7 @@
   padding: 0;
   background-color: rgb(255, 255, 255);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
 }
 
 :root {
@@ -99,18 +100,33 @@ section {
   /* height: 100vh; */
 }
 
-#skills-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10vh;
+#projects-cards {
+  padding-top: 2vh;
 }
 
-#skills-icons-img_1, #skills-icons-img_2 {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
+#skills-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: center;
+  padding-top: 1vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+/* first 6 icons */
+#skills-icons-img_1, #skills-icons-img_2, #skills-icons-img_3, #skills-icons-img_4, #skills-icons-img_5, #skills-icons-img_6{
+  max-width: 100%;
+  margin: auto;
+}
+
+/* last 6 icons */
+#skills-icons-img_7, #skills-icons-img_8, #skills-icons-img_9, #skills-icons-img_10, #skills-icons-img_11, #skills-icons-img_12{
+  max-width: 100%;
+  margin: auto;
+  padding-top: 1vh;
 }
 
 #second-page-cards {
@@ -155,6 +171,42 @@ section {
   justify-content: space-around;
   align-items: normal;
   align-content: center;
+}
+
+#second-page-cards.open {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: normal;
+  align-content: center;
+}
+
+#cards-image {
+  width: 100%;
+  max-height: 18vh;
+}
+
+#cards-image > img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.cards-design {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.cards-design > #cards-image {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.cards-design > #cards-text {
+  grid-area: 1 / 2 / 2 / 3; 
 }
 
 
@@ -230,6 +282,31 @@ section {
 
 
 /* //////////GALLERY SECTION */
+#skills-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  padding-top: 13vh;
+  margin-left: 20vh;
+  margin-right: 20vh;
+}
+
+/* first 6 icons */
+#skills-icons-img_1, #skills-icons-img_2, #skills-icons-img_3, #skills-icons-img_4, #skills-icons-img_5, #skills-icons-img_6{
+  max-width: 100%;
+  margin: auto;
+}
+
+/* last 6 icons */
+#skills-icons-img_7, #skills-icons-img_8, #skills-icons-img_9, #skills-icons-img_10, #skills-icons-img_11, #skills-icons-img_12{
+  max-width: 100%;
+  margin: auto;
+  padding-top: 2vh;
+}
+
   #first-page-cards {
     display: flex;
     flex-direction: row;
@@ -237,6 +314,8 @@ section {
     justify-content: space-around;
     align-items: normal;
     align-content: center;
+    margin-left: 15vh;
+    margin-right: 15vh;
   }
 
   #second-page-cards.open {
@@ -246,6 +325,42 @@ section {
       justify-content: space-around;
       align-items: normal;
       align-content: center;
+      margin-left: 15vh;
+      margin-right: 15vh;
     }
 
+    #cards-image {
+      object-fit: cover;
+      width: 100%;
+      max-height: 20vh;
+    }
+
+    #cards-image > img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .cards-design {
+      /* //that blue between the img and text change the smaller the number ????? (28vh)*/
+      width: 25vh; 
+      height: 45vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+    
+    .cards-design > #cards-image {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .cards-design > #cards-text {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #projects-cards {
+      padding-top: 12vh;
+    }
 }
