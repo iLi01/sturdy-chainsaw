@@ -1,0 +1,9 @@
+{
+
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#00000000",
+    "editorWarning.foreground": "#00000000",
+    "editorInfo.foreground": "#00000000",
+    "workbench.colorCustomizations": {
+    "editorOverviewRuler.findMatchForeground": "#00000000", "editorOverviewRuler.rangeHighlightForeground": "#00000000", "editorOverviewRuler.selectionHighlightForeground": "#00000000", "editorOverviewRuler.wordHighlightForeground": "#00000000", "editorOverviewRuler.wordHighlightStrongForeground": "#00000000", "editorOverviewRuler.modifiedForeground": "#00000000", "editorOverviewRuler.addedForeground": "#00000000", "editorOverviewRuler.deletedForeground": "#00000000", "editorOverviewRuler.errorForeground": "#00000000", "editorOverviewRuler.warningForeground": "#00000000", "editorOverviewRuler.infoForeground": "#00000000", "editorOverviewRuler.bracketMatchForeground": "#00000000", }, "problems.autoReveal": false, "problems.decorations.enabled": false, "outline.problems.enabled": false, "outline.problems.colors": false, "outline.problems.badges": false, "editor.minimap.enabled": false, "redhat.telemetry.enabled": false, "security.workspace.trust.untrustedFiles": "open", "editor.unusualLineTerminators": "off", }
+}
