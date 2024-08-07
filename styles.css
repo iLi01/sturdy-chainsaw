@@ -3,16 +3,20 @@
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 255);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 14px;
+  font-family: "Basic", sans-serif;
+  /* font-size: 14px; */
 }
 
 :root {
   --purple: rgba(152,109,255,255);
-  --header-size_1: 40vh;
-  --header-size_2: 20vh;
-  --normal-size: 10vh;
+  --header-size_1: 30vh;
+  --header-size_2: 17vh;
+  --extra-small-size: 12px;
+  --normal-size: 14px;
+  --subheader-size: 2.3vh;
+  --header-size: 5vh;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -38,7 +42,17 @@
 }
 
 .text-size-1 {
-  background-color: lightgray;
+  background-color: transparent;
+  font-size: var(--header-size);
+}
+
+.text-size-2 {
+  background-color: transparent;
+  font-size: var(--subheader-size);
+}
+
+.text-size-3 {
+  background-color: transparent;
   font-size: var(--normal-size);
 }
 
@@ -88,7 +102,7 @@ section {
 
 /* gif iLi size */
 #gif-name{
-  max-height: 10vh;
+  max-height: 20vh;
 }
 
 /* photo with face size */
@@ -96,6 +110,10 @@ section {
   max-height: 20vh;
 }
 
+#first-line_container{
+  display: flex;
+  width: 50%;
+}
 
 
 
@@ -258,7 +276,7 @@ section {
 
 }
 
-#grid-container_extras {
+#grid_container_extras {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
@@ -284,6 +302,36 @@ section {
   background-color: rgb(255, 255, 176);
 }
 
+#grid_container_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: auto;
+  margin-top: 5vh;
+  height: 70vh;
+  width: 80%;
+}
+
+/* //same as the section up to this one */
+
+/* 
+#illustrations-sec {
+  grid-area: 1 / 1 / 2 / 2;
+  padding-top: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#design-sec {
+  grid-area: 1 / 2 / 2 / 3;
+  padding-top: 40vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+} */
 
 
 
@@ -291,7 +339,7 @@ section {
 /* //////////FOOTER SECTION */
 #footer-sec {
   background-color: rgb(176, 255, 238);
-  height: 200px;
+  height: 100px;
 }
 
 
@@ -447,7 +495,7 @@ section {
 
 
     /* //////////EXTRAS SECTION */
-#grid-container_extras {
+#grid_container_extras {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
