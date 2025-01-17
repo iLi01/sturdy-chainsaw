@@ -97,7 +97,7 @@ section {
 
 /* //////////HERO SECTION */
 #hero-sec {
-  background-color: aqua;
+  background-color: rgb(228, 255, 94);
 }
 
 /* gif iLi size */
@@ -120,7 +120,7 @@ section {
 /* //////////GALLERY SECTION */
 
 #projects-gallery-sec {
-  background-color: aquamarine;
+  background-color: rgb(7, 77, 54);
   /* height: 100vh; */
 }
 
